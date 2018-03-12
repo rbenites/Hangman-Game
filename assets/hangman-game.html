@@ -6,58 +6,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Hangman-Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/style.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-    <script src="game.js"></script>
+    <script src="../assets/Javascript/game.js"></script>
+
 </head>
 
 <body>
+
     <div class="card mb-3">
         <img class="card-img-top" src="../assets/images/Star_Wars_Logo.png" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This is my StarWars Hangman Game. Here are the rules...just guess letters and try to win. All words can come
                 from any StarWars movie but will be limited to characters in the movies and Cartoon shows (not including
-                books)
+                books) Press ENTER to start.
             </p>
         </div>
     </div>
     <div class="container">
         <div class="row">
-            <div class="col">This column will hold my images</div>
-
+            <div class="col">
+                This column will hold my images
+            </div>
             <div class="col">
                 This side will hold by game
                 <p class="wins">Wins:
                     <span id="wins">0</span>
                 </p>
                 <p class="losses">Losses:
-                    <span id="Losses">0</span>
+                    <span id="losses">0</span>
                 </p>
                 <br/>
                 <p>Current Word: </p>
                 <p>
-                    <span id="current-word"></span>
+                    <span id="current-word">""</span>
                 </p>
                 <p>Guessed Letters: </p>
                 <p>
-                    <span id="guessed-letters"></span>
+                    <span id="guessed-letters">""</span>
                 </p>
-                <p>Guesses Remaingin: </p>
+                <p>Guesses Remaining: </p>
                 <p>
-                    <span id="guesses"></span>
+                    <span id="guesses">10</span>
                 </p>
-                <p> this is some stuff</p>
             </div>
         </div>
+    </div>
     </div>
 
 
 
 
 
-
+    <footer class="footer position-relative">
+        <div class="container">
+            <span class="text-muted">Copyright Roberto Benites 2018</span>
+        </div>
+    </footer>
 
     <!--BootStrap links-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -66,12 +73,7 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="assests/Javascript/game.js" charset="utf-8"></script>
-    <footer class="footer">
-        <div class="container">
-            <span class="text-muted">Copyright Roberto Benites 2018</span>
-        </div>
-    </footer>
+
 </body>
 
 </html>
